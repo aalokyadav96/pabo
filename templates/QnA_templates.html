@@ -1,0 +1,31 @@
+{{define "qna_header"}}
+  <header> 
+		<h1>QnA</h1>
+  </header>
+{{end}}
+
+{{define "qna_nav"}}
+  <nav class="top-nav">
+	<a href="/qna/new">Ask a question</a>	
+{{ if eq .LoggedIn "true"}}
+<form method="POST" action="/logout">
+	<button>Logout</button>
+</form>
+{{ end }}
+{{ if eq .LoggedOut "true"}}
+	<a href="/login">LogIn</a>
+{{ end }}
+</nav>
+{{end}}
+
+{{define "qna_main"}}
+  <main> 
+	main
+ </main>
+{{end}}
+
+{{define "qna_footer"}}
+  <footer> 
+  footer
+  </footer>
+{{end}}

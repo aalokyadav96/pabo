@@ -1,0 +1,12 @@
+
+{{template "qna_nav"}}
+
+<section>
+	<h2>{{.Q}}</h2>
+	<p>{{.A}}</p>
+</section>
+
+{{ if .LoggedIn }}
+	<a href="/qna/edit/{{.PostId}}">Edit</a><br>
+	<a href="/qna/delete/{{.PostId}}">Delete</a>
+{{ end }}

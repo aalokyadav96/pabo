@@ -1,0 +1,11 @@
+
+{{template "blog_nav"}}
+
+<section>
+	<h2>{{.PostTitle}}</h2>
+	<p>{{.PostBody}}</p>
+</section>
+
+{{ if .LoggedIn }}
+	<a href="/blog/edit/{{.PostId}}">Edit</a><br>
+{{ end }}

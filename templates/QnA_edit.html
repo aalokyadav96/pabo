@@ -1,0 +1,8 @@
+
+{{template "qna_nav"}}
+<form method="POST" action="/qna/edit/{{.PostId}}" >
+    <input type="hidden" name="token" value="{{.PostId}}">
+		<input type="text" name="posttitle" placeholder="Title" value="{{.Q}}">
+		<input type="text" name="postbody" placeholder="PostBody" value="{{.A}}" >
+		<input type="submit">
+	</form>

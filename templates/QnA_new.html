@@ -1,0 +1,9 @@
+
+{{template "qna_nav"}}
+
+<form method="POST" action="/qna/new" >
+    <input type="hidden" name="token" value="{{.Token}}">
+		<input type="text" name="Q" placeholder="Title" value="">
+		<textarea name="A" placeholder="PostBody" value="" ></textarea><br>
+		<input type="submit">
+	</form>
