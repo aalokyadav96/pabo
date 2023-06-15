@@ -1,12 +1,12 @@
 package main
 import (
-	"net/http"
+//	"net/http"
 	"fmt"
 	"log"
 	"io"
 	"os/exec"
 	 
-    "github.com/julienschmidt/httprouter"
+//    "github.com/julienschmidt/httprouter"
 )
 
 func testRedis() {
@@ -37,7 +37,7 @@ func init() {
 	
 }
 
-
+/*
 func CustomPage(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	fmt.Println("path", r.URL.Path)
 	switch r.Method {
@@ -60,25 +60,25 @@ func CustomPage(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 			fmt.Println("Method Not allowed")
 		}
 	}
-}
-
+}*/
+/*
 
 type Person struct {
 First string
 Last string
 }
-func init() {
+func init() {*/
     /* This will marshal the JSON into []bytes */
-
+/*
     p1 := Person{"alice", "bob"}
     bs, _ := json.Marshal(p1)
     fmt.Println(string(bs))
-
+*/
     /* This will unmarshal the JSON from []bytes */
-
+/*
     var p2 Person
     bs = []byte(`{"First":"alice","Last":"bob"}`)
     json.Unmarshal(bs, &p2)
     fmt.Println(p2)
 
-}
+}*/

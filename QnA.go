@@ -158,7 +158,7 @@ func QnA_Answer(w http.ResponseWriter, r *http.Request, postid httprouter.Params
 
 func QnA_Delete(w http.ResponseWriter, r *http.Request, postid httprouter.Params) {
 	fmt.Println("path", r.URL.Path)
-	if r.Method  == "DELETE" {
+	if r.Method  == "POST" {
 		if isLoggedIn(r) {
 			println(rdxDel(postid.ByName("postid")))
 			http.Redirect(w, r, "/qna", http.StatusSeeOther)

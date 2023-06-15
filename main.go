@@ -77,7 +77,7 @@ func HandleRoutes() {
 	router.POST("/qna/edit/:postid", QnA_Edit)
 	router.POST("/qna/answer/:postid", QnA_Answer)
 	router.GET("/qna/view/:postid", QnA_View)
-	router.DELETE("/qna/delete/:postid", QnA_Delete)
+	router.POST("/qna/delete/:postid", QnA_Delete)
 
 //--------Blog--------//
 	router.GET("/blog", Blog)
@@ -86,7 +86,7 @@ func HandleRoutes() {
 	router.GET("/blog/edit/:postid", EditBlogPost)
 	router.POST("/blog/edit/:postid", EditBlogPost)
 	router.GET("/blog/view/:postid", ViewBlogPost)
-	router.DELETE("/blog/delete/:postid", DeleteBlogPost)
+	router.POST("/blog/delete/:postid", DeleteBlogPost)
 
 //--------Login--------//
 	router.GET("/register", Register)
@@ -116,6 +116,7 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		if isLoggedIn(r) {
 			tmpl.ExecuteTemplate(w, "head.html", nil)
 			tmpl.ExecuteTemplate(w, "nav.html", LoginStatus{LoggedIn: "true"})
+			tmpl.ExecuteTemplate(w, "index.html", nil)
 			tmpl.ExecuteTemplate(w, "footer.html", nil)
 		} else {
 			tmpl.ExecuteTemplate(w, "head.html", nil)

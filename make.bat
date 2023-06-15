@@ -1,1 +1,1 @@
-go run main.go login.go helpers.go rdx.go blog.go
+go run main.go login.go helpers.go rdx.go blog.go translate.go  QnA.go

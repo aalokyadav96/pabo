@@ -1,8 +1,23 @@
-<nav class="top-nav">
-<a href="/">Home</a>
-<a href="/qna">QnA</a>
-<a href="/blog">Blog</a>
-
+<nav class="navigation">
+    <input class="toggle" type="checkbox" id="more" aria-hidden="true" tabindex="-1">
+    <div class="navigation__inner">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="/">Home</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/places">Places</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/gigs">Gigs</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/news">News</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/Events">Events</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/shop">Shopping</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/blog">Blog</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="https://localhost:9001/">Translate</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/qna">QnA</a></li>
+      </ul>
+      <div class="navigation__toggle">
+        <label class="navigation__link" for="more" aria-hidden="true"></label>
+      </div>
+    </div>
+  </nav>
+<br>
 {{ if eq .LoggedIn "true"}}
 <form method="POST" action="/logout">
 	<button>Logout</button>
@@ -11,4 +26,3 @@
 {{ if eq .LoggedOut "true"}}
 	<a href="/login">LogIn</a>
 {{ end }}
-</nav>

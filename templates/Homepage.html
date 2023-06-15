@@ -1,0 +1,286 @@
+<div id="wrap">
+	<div id="header" role="banner">
+		<div id="topSearchWrap" class="header_inner">
+			<div id="search_area" class="search_area is_focus">
+				<div class="search_group">
+					<div id="search" class="search_group_inner">
+						<h1 id="special-input-logo" class="search_logo">
+							<a href="/" class="link_naver type_motion_n is_fadein">
+								<span class="ico_n_logo_svg">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+									</svg>
+								</span>
+								<span class="blind">NAVER</span>
+							</a>
+						</h1>
+						<form id="sform" name="search" role="search" action="https://search.naver.com/search.naver" method="get">
+							<fieldset>
+								<legend class="blind">??</legend>
+								<div class="search_input_box"> <input id="query" name="query" type="search" title="Type Here." placeholder="Enter query here." maxlength="255" autocomplete="off" class="search_input" data-atcmp-element=""> </div>
+								<button type="submit" class="btn_search"> <span id="search-btn" class="ico_btn_search"></span> <span class="blind">Search</span> </button> 
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="shortcutArea" class="shortcut_area" role="region">
+				<ul class="shortcut_list">
+					<li class="shortcut_item"><a href="https://mail.naver.com" class="link_service" target="_blank"><span class="service_icon type_mail"></span><span class="service_name">Mail</span></a></li>
+					<li class="shortcut_item"><a href="https://cafe.naver.com" class="link_service" target="_blank"><span class="service_icon type_cafe"></span><span class="service_name">Cafe</span></a></li>
+					<li class="shortcut_item"><a href="https://blog.naver.com" class="link_service" target="_blank"><span class="service_icon type_blog"></span><span class="service_name">Blog</span></a></li>
+					<li class="shortcut_item"><a href="https://shopping.naver.com/home" class="link_service" target="_blank"><span class="service_icon type_shopping"></span><span class="service_name">Shopping</span></a></li>
+					<li class="shortcut_item"><a href="https://news.naver.com/" class="link_service" target="_blank"><span class="service_icon type_news"></span><span class="service_name">News</span></a></li>
+					<li class="shortcut_item"><a href="https://map.naver.com" class="link_service" target="_blank"><span class="service_icon type_map"></span><span class="service_name">Map</span></a></li>
+					<li class="shortcut_item"><a href="#" class="link_service" role="button"><span class="service_icon type_more"></span><span class="blind">???? ??</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+html.fzoom {
+    font-size: 10.5px;
+    line-height: 10.5px;
+}
+body, input, textarea, select, button, table {
+    font-size: 1rem;
+	font-family: Breezesans;
+    line-height: 1.7rem;
+}
+#header .header_inner {
+    z-index: 120;
+    position: relative;
+    height: 156px;
+    padding: 64px 0 42px;
+}
+#header .header_inner .search_area {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: 10;
+    width: 660px;
+    border: 2px solid #03c75a;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+#header .header_inner .search_group_inner {
+    position: relative;
+    padding-left: 83px;
+}
+#header .header_inner .search_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header .header_inner .search_logo .link_naver {
+    position: relative;
+    display: block;
+    margin-right: 12px;
+    padding: 17px 17px 17px 27px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#header .header_inner .search_logo .link_naver.is_fadein .ico_n_logo_svg {
+    opacity: 1;
+    -webkit-transform: scale(1);
+}
+#header .header_inner .search_logo .link_naver .ico_n_logo_svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+#header .header_inner .search_logo .link_naver .ico_n_logo_svg>svg {
+    fill: #03c75a;
+}
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+img, fieldset {
+    border: 0;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+#header .header_inner .search_input_box {
+    width: 480px;
+    background-color: #fff;
+}
+#header .header_inner .search_input_box .search_input {
+    width: 100%;
+    height: 58px;
+    color: #000;
+    z-index: 10;
+    position: relative;
+    padding: 17px 0;
+    background-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    line-height: 24px;
+    font-weight: bold;
+    outline: 0;
+}
+
+input, button {
+    border-radius: 0;
+    border: 0;
+}
+#header .header_inner .btn_search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 17px 27px 16px 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+#header .header_inner .btn_search .ico_btn_search {
+    display: block;
+}
+#header .header_inner .btn_search .ico_btn_search::before {
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -364px -132px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+#header .header_inner .shortcut_area {
+    position: relative;
+    width: 676px;
+    margin: 84px auto 0;
+}
+ul, ol {
+    list-style: none;
+}
+#header .header_inner .shortcut_list .shortcut_item {
+    float: left;
+}
+#header .header_inner .shortcut_list .link_service {
+    position: relative;
+    display: block;
+    width: 96px;
+}
+#header .header_inner .shortcut_list .service_icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+#header .header_inner .shortcut_list .service_icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: 0px -128px;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+#header .header_inner .shortcut_list .service_icon.type_mail::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -250px -90px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+#header .header_inner .shortcut_list .service_icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#header .header_inner .shortcut_list .service_name {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    margin-top: 7px;
+    line-height: 20px;
+    text-align: center;
+}
+#header .header_inner .shortcut_list .service_icon.type_cafe::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -250px 0px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+#header .header_inner .shortcut_list .service_icon.type_blog::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -201px -98px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+#header .header_inner .shortcut_list .service_icon.type_shopping::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -90px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+#header .header_inner .shortcut_list .service_icon.type_news::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: 0px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+#header .header_inner .shortcut_list .service_icon.type_map::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -201px 0px;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+#header .header_inner .shortcut_list .service_icon.type_more::after {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+    background-size: 422px 405px;
+    background-position: -250px -135px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+
+
+</style>

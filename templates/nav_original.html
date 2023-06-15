@@ -1,0 +1,20 @@
+<nav class="top-nav">
+<a href="/">Home</a>
+<a href="/places">Places</a>
+<a href="/gigs">Gigs</a>
+<a href="/news">News</a>
+<a href="/Events">Events</a>
+<a href="/shop">Shop</a>
+<a href="http://localhost:9001/">Translate</a>
+<a href="/blog">Blog</a>
+<a href="/qna">QnA</a>
+
+{{ if eq .LoggedIn "true"}}
+<form method="POST" action="/logout">
+	<button>Logout</button>
+</form>
+{{ end }}
+{{ if eq .LoggedOut "true"}}
+	<a href="/login">LogIn</a>
+{{ end }}
+</nav>

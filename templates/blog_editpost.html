@@ -8,5 +8,7 @@
 	</form>
 	
 {{ if .LoggedIn }}
-	<a href="/blog/delete/{{.PostId}}">Delete</a>
+<form method="POST" action="/blog/delete/{{.PostId}}">
+	<button>Delete</button>
+</form>
 {{ end }}

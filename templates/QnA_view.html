@@ -8,5 +8,7 @@
 
 {{ if .LoggedIn }}
 	<a href="/qna/edit/{{.PostId}}">Edit</a><br>
-	<a href="/qna/delete/{{.PostId}}">Delete</a>
+<form method="POST" action="/qna/delete/{{.PostId}}">
+	<button>Delete</button>
+</form>
 {{ end }}
